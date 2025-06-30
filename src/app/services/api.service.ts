@@ -11,10 +11,10 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getTasks() {
-    return this.http.get(`${this.apiUrl}/tasks`);
+    return this.http.get(`${this.apiUrl}/api/tasks`);
   }
 
   addTask(task: string) {
-    return this.http.post(`${this.apiUrl}/tasks`, { text: task });
+    return this.http.post(`${this.apiUrl}/api/tasks`, { text: task });
   }
 }
