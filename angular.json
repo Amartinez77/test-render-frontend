@@ -15,7 +15,7 @@
           "options": {
             "baseHref": "",
             "deployUrl": "",
-            "outputPath": "dist/test-render-frontend",
+            "outputPath": "dist/test-render-frontend/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
