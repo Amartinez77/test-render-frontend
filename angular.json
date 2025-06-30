@@ -41,6 +41,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "optimization": true,
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",

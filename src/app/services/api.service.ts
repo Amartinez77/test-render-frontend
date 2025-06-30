@@ -8,9 +8,8 @@ import { environment } from '../../environments/environment'; // Importa el ento
 })
 export class ApiService {
   //private apiUrl = environment.apiUrl;
-  private apiUrl = environment.production
-    ? 'https://test-render-backend-h55a.onrender.com' // URL en producción
-    : 'http://localhost:3000'; // URL local del backend
+  private apiUrl = 'https://test-render-backend-h55a.onrender.com/';
+    
   constructor(private http: HttpClient) { }
 
   getTasks() {
