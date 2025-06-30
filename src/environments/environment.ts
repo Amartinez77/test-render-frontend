@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000'  // URL local del backend
+  apiUrl: 'https://test-render-backend-h55a.onrender.com/'  // URL local del backend
 };
