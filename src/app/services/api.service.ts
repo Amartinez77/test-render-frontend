@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment'; // Importa el entorno para la URL de la API
 
+
 @Injectable({
   providedIn: 'root'
 })
