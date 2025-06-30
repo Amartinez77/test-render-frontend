@@ -6,15 +6,15 @@ import { environment } from '../../environments/environment'; // Importa el ento
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = environment.apiUrl;  // Usará la URL según el entorno
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
   getTasks() {
-    return this.http.get(`${this.apiUrl}/tasks`);
+    return this.http.get(`${this.apiUrl}/api/tasks`); // 👈 /api añadido aquí
   }
 
   addTask(task: string) {
-    return this.http.post(`${this.apiUrl}/tasks`, { text: task });
+    return this.http.post(`${this.apiUrl}/api/tasks`, { text: task }); // 👈 /api añadido aquí
   }
 }
